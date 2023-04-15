@@ -7,9 +7,8 @@
 # you're doing.
 Vagrant.configure("2") do |config|
 
-  config.vm.synced_folder ".", "/vagrant", type: "rsync",
-    rsync__exclude: ".git/"
-    
+  config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: ".git/"
+
  # The most common configuration options are documented and commented below.
  # For a complete reference, please see the online documentation at
  # https://docs.vagrantup.com.
